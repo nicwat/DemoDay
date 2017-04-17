@@ -2,92 +2,16 @@
 <html>
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+	<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
     <script type="text/javascript" src="econlogic.js">
     </script>
   </head>
   <body>
     <div id="chart_div" style="width: 100%; height: 500px;"></div>
+    <div id="container" style="width: 100%; height: 500px;"></div>
 
 
-
-    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
-<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
-<script type="text/javascript">
-  FusionCharts.ready(function(){
-    var sdGraph = new FusionCharts({
-    type: 'dragarea',
-    renderAt: 'chart-container',
-    width: '1000',
-    height: '700',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "caption": "Supply-Demand",
-            "captionFontSize": "30" ,
-            "subCaption": "Drag anchors to change curve elasticities",
-            "subCaptionFontSize": "15",
-            "xAxisName": "Quantity",
-            "xAxisNameFontSize": "20",
-            "yAxisName": "Price($)",
-            "yAxisNameFontSize": "20",
-            "numberPrefix": "$",
-            "theme": "fint",
-            "showHoverEffect": "1",
-            "anchorHoverEffect": "1",
-            "showToolTip" : "1",
-            "seriesNameInToolTip" :"1",
-            "showHoverEffect" : "1",
-          
-        },
-        "categories": [{
-            "category": [{
-                "label": "0",
-                "label": "5",
-
-                // "labelLink" : "insertURL for each val"
-            }, {
-                "label": "50",
-            }]
-        }],
-        "dataset": [{
-            "seriesname": "Demand",
-            "valuePosition": "ABOVE",
-            "allowDrag": "1",
-            "data": [{
-                "value": "600",
-                "allowDrag": "1",
-                "dashed": "1",
-                "showvalue": "1",
-                "drawAnchors" : "1",
-
-            }, {
-                "value": "300",
-                "allowDrag": "1",
-                "tooltext": "Demand blah blah blah blah blah blah blah blah blah"
-                // "link" : "enterstring",
-            }]
-        }, {
-            "seriesname": "Supply",
-            "allowDrag": "1",
-            "data": [{
-                "value": "300",
-                "allowDrag": "1",
-                "dashed": "1"
-            }, {
-                "value": "600",
-                "allowDrag": "1",
-                "tooltext": "Supply"
-            }]
-
-        }]
-    },
-}
-);
-    sdGraph.render();
-});
-</script>
-</head>
-<body>
 <div id = "chart-container">Supply-Demand graph loading!</div>
 <script>   getJSONData()</script>
 </body>
