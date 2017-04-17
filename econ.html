@@ -6,13 +6,33 @@
 	<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
     <script type="text/javascript" src="econlogic.js">
     </script>
+    <link rel="stylesheet" type="text/css" href="econstyle.css">
   </head>
   <body>
     <div id="chart_div" style="width: 100%; height: 500px;"></div>
-    <div id="container" style="width: 100%; height: 500px;"></div>
+    <!-- <div id="container" style="width: 100%; height: 500px;"></div> -->
 
 
 <div id = "chart-container">Supply-Demand graph loading!</div>
+<div id='container'>
+			<div id='title'>
+				<h1>Test Your Knowledge: Supply-Demand Quiz</h1>
+			</div>
+   			<br/>
+  			<div id='quiz'></div>
+    		<div class='button' id='next'><a href='#'>Next</a></div>
+    		<div class='button' id='prev'><a href='#'>Prev</a></div>
+    		<div class='button' id='start'> <a href='#'>Start Over</a></div>
+    		<!-- <button class='' id='next'>Next</a></button>
+    		<button class='' id='prev'>Prev</a></button>
+    		<button class='' id='start'> Start Over</a></button> -->
+    	</div>
+
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script type="text/javascript" src='questions.json'></script>
+		<script type='text/javascript' src='jsquiz.js'></script>
+
+
 <script>   getJSONData()</script>
 </body>
 <script type="text/javascript" src ="weird.js"></script>
