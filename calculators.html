@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head> <title></title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <script type="text/javascript" src = "calculatorlogic.js"></script>
+  <link rel="stylesheet" type="text/css" href="calculatorstyle.css">
+</head>
+<body>
+    <img src="dwlgraph.jpg">
+       <div class="calc-container">
+  <div class="inner-container">
+    <div class="inner-gradient">
+      <div class="border-calc">
+    <h1 class="savings-title">Deadweight Loss Calculator</h1>
+    <small>Please enter numbers and decimal points only.</small>
+    <form name=dwlCalc method=POST>
+
+      <h2>P1:&nbsp;
+
+      <!-- <select id="myCurrency">
+        <option value="£">£</option>
+        <option value="$">$</option>
+        <option value="€">€</option>
+      </select> -->
+      <input type="number" onkeypress="return onlyNumbers(event)" name=p1 size=5 id="p1Range"> <br /><span class="esc-error" id="p1Error"></span></h2>
+
+      <h2>P2:&nbsp;
+
+      <input type="number"   onkeypress="return onlyNumbers(event)" name=p2 size=5 id="p2Range"><span class="percent"></span><br /> <span class="esc-error" id="p2Error"></span></h2>
+
+      <h2>Q1:&nbsp;
+
+      <input type="number"  onkeypress="return onlyNumbers(event)" name=q1 size=5 id="q1Range"><span class="percent"></span><br /> <span class="esc-error" id="q1Error"></span></h2>
+
+      <h2>Q2: &nbsp;
+      <input type="number"  id="q2Range" onkeypress="return onlyNumbers(event)" name=q2 size=3><br /> <span class="esc-error" id="q2Error"></span>
+      <br />
+      <div class="button-container-calc">
+        <input type=button onClick="return totalDWL()" value=Calculate class="button-theme-1">
+        <input type=button onClick="return totalDWLReset()" value=Reset class="button-theme-2">
+        </div></h2>
+    </form>
+    <div class="balance-container">
+        <p id="finalDWL"></p>
+    <!-- <p class="esc-finalbalance" id="finalBalanceformatted"></p> -->
+        </div>
+     
+      </div>
+
+
+  </div>
+</div>
+
+</div>
+    
+</body>
+
+</html>
