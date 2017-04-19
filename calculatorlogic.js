@@ -51,10 +51,10 @@ var quant2 = document.dwlCalc.q2.value;
 var divideBy2 = 0.5;
   
 // Calculate final DWL and display result
-var dwl = ((price1-price2) * (quant1-quant2) * divideBy2);
-document.getElementById('finalDWL').innerHTML = $((price1-price2)*(quant1-quant2)*divideBy2);
+var dwl = ((price1-price2) * (quant2-quant1) * divideBy2);
+document.getElementById('finalDWL').innerHTML = $((price1-price2)*(quant2-quant1)*divideBy2);
 console.log(dwl);
-$("#finalDWL").text(dwl);
+$("#finalDWL").text('DWL: ' + dwl);
 }
 
 
@@ -72,6 +72,7 @@ document.getElementById('p1Error').innerHTML = '';
 document.getElementById('p2Error').innerHTML = '';
 document.dwlCalc.p1.value = null;
 document.dwlCalc.p2.value = null;
+document.dwlCalc.q1.value = null;
 document.dwlCalc.q2.value = null;
 }
 
