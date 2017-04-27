@@ -1,24 +1,24 @@
 (function() {
   var questions = [{
-    question: "What is 2*5?",
-    choices: [2, 5, 10, 15, 20],
+    question: "The demand for which good is typically inelastic?",
+    choices: ['Potatoes', 'Insulin', 'Nuclear Energy', 'Restaurant Meals', 'Chocolate'],
+    correctAnswer: 1
+  }, {
+    question: "Which firm has the most elastic supply",
+    choices: ['Underutilized plant', 'Farm: mid-season', 'Restaurant' , 'Coal plant', 'None of these have elastic supply'],
+    correctAnswer: 0
+  }, {
+    question: "If supply is perfectly elastic, the price of a good will ________ if demand becomes more elastic.",
+    choices: ['Rise', 'Fall', 'Stay the same', 'Not enough information', 'Skyrocket'],
     correctAnswer: 2
   }, {
-    question: "What is 3*6?",
-    choices: [3, 6, 9, 12, 18],
-    correctAnswer: 2
+    question: "________ measures the responsiveness of quantity supplied to a change in price.",
+    choices: ["Elasticity", "Supply", "Demand", "Price elasticity of demand", "Price elasticity of supply"],
+    correctAnswer: 4
   }, {
-    question: "What is 8*9?",
-    choices: [72, 99, 108, 134, 156],
-    correctAnswer: 2
-  }, {
-    question: "What is 1*7?",
-    choices: [4, 5, 6, 7, 8],
-    correctAnswer: 2
-  }, {
-    question: "What is 8*8?",
-    choices: [20, 30, 40, 50, 64],
-    correctAnswer: 2
+    question: "Do you like economics now?",
+    choices: ['Of course!', 'No, I love it!', 'Yes, thanks to this program!', ':-)', 'All of the above'],
+    correctAnswer: 4
   }];
   
   var questionCounter = 0; //Tracks question number
