@@ -1,19 +1,34 @@
+html {
+  background-image: url(econbackground.jpg);
+
+}
 div {
   float: right;
 }
 img {
-  float: left;
+  /*float: left;*/
   max-width: 50%;
 }
-button{
+/*button{
   width:200px !Important;
-}
+}*/
+
 small {
   font-family: 'andale mono', verdana, arial, sans-serif;
 }
 
+h1 {
+  font-family: 'rubik mono one', arial, verdana, sans-serif;
+  color:white;}
+
 h2 {
   font-family: 'andale mono', verdana, arial, sans-serif;
+}
+
+p {
+  color: white;
+  font-family: 'andale mono', verdana, arial, sans-serif;  
+  max-width: 40%;
 }
 .savings-title {
   font-family: 'andale mono', verdana, arial, sans-serif;
