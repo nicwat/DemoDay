@@ -1,5 +1,20 @@
+body {
+    background-image: url(econbackground.jpg);
+    background-color: #cccccc;
+
+}
+
+h1 { color:white; }
+
+
+div {
+  /*opacity: 0.8;*/
+}
+
+
+
 .container {
-  width: 80%;
+  width: 70%;
   margin: 20px auto;
 }
 
@@ -54,11 +69,11 @@ button {
     margin:auto;
     padding: 0 25px 40px 10px;
     background-color: black;
-    border:4px solid #B0E0E6;
-    border-radius:5px;
-    color: #FFFFFF;
+    border:4px solid #d3d19c;
+    border-radius:20px;
+    color: white;
     font-weight: bold;
-    box-shadow: 5px 5px 5px #888;
+    box-shadow: 10px 10px 10px #888;
 }
 
 ul {
@@ -75,3 +90,8 @@ ul {
     display:none;
     width: 90px;
 }
+
+
+
+
+
