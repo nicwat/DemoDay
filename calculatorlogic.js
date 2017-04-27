@@ -1,8 +1,3 @@
-///*.5 * (P2 - P1) * (Q1 - Q2)*/
-//balance now = p1//
-//rate now ==p2//
-//rate now == q1//
-//years now ==q2//
 
 function onlyNumbers(keyinput){
 var input=keyinput.charCode? keyinput.charCode : keyinput.keyCode;
@@ -51,8 +46,8 @@ var quant2 = document.dwlCalc.q2.value;
 var divideBy2 = 0.5;
   
 // Calculate final DWL and display result
-var dwl = ((price1-price2) * (quant2-quant1) * divideBy2);
-document.getElementById('finalDWL').innerHTML = $((price1-price2)*(quant2-quant1)*divideBy2);
+var dwl = ((price1-price2) * (quant1-quant2) * divideBy2);
+document.getElementById('finalDWL').innerHTML = $((price1-price2)*(quant1-quant2)*divideBy2);
 console.log(dwl);
 $("#finalDWL").text('DWL: ' + dwl);
 }
@@ -77,11 +72,7 @@ document.dwlCalc.q2.value = null;
 }
 
 
-// function format1(n) {
-//     return " " + n.toFixed(2).replace(/./g, function(c, i, a) {
-//         return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "," + c : c;
-//     });
-// }
+
 $("#p1Range").attr({
    "max" : 10000,
    "min" : 0
@@ -98,9 +89,3 @@ $("#q2Range").attr({
    "max" : 100000,
    "min" : 0
  });
-// });
-// $.fn.addCommas = function() {
-//   $(this).each(function(){
-//     $(this).text(addCommas($(this).text()));
-//   });
-// };
