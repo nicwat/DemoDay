@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head> <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <script type="text/javascript" src = "calculatorlogic.js"></script>
+  <link rel="stylesheet" type="text/css" href="calculatorstyle.css">
+</head>
+<body>
+
+
+<header>
+  <nav>
+    <button><a href="homepage.html">Home</a></button>
+    <button><a href="elastgraph.html">Elasticities</a></button>
+    <button><a href="calculators.html">Deadweight Loss</a></button>
+    <button><a href="#">Consumer/Producer Surplus</a></button>
+  </nav>
+   
+<h1>                Deadweight Loss</h1>
+</header>
+</nav>
+
+  
+    <img src="dwlgraph.jpg">
+  
+
+  
+
+
+       <div class="calc-container">
+  <div class="inner-container">
+    <div class="inner-gradient">
+      <div class="border-calc">
+    <h1 class="savings-title">Deadweight Loss Calculator</h1>
+    <small>Please enter numbers and decimal points only.</small>
+    <form name=dwlCalc method=POST>
+
+      <h2>P1:&nbsp;
+
+      <input type="number" onkeypress="return onlyNumbers(event)" name=p1 size=5 id="p1Range"> <br /><span class="esc-error" id="p1Error"></span></h2>
+
+      <h2>P2:&nbsp;
+
+      <input type="number"   onkeypress="return onlyNumbers(event)" name=p2 size=5 id="p2Range"><span class="percent"></span><br /> <span class="esc-error" id="p2Error"></span></h2>
+
+      <h2>Q1:&nbsp;
+
+      <input type="number"  onkeypress="return onlyNumbers(event)" name=q1 size=5 id="q1Range"><span class="percent"></span><br /> <span class="esc-error" id="q1Error"></span></h2>
+
+      <h2>Q2: &nbsp;
+      <input type="number"  id="q2Range" onkeypress="return onlyNumbers(event)" name=q2 size=3><br /> <span class="esc-error" id="q2Error"></span>
+      <br />
+      <div class="button-container-calc">
+        <input type=button onClick="return totalDWL()" value=Calculate class="button-theme-1">
+        <input type=button onClick="return totalDWLReset()" value=Reset class="button-theme-2">
+        </div></h2>
+    </form>
+    <div class="balance-container">
+        <p id="finalDWL"></p>
+        </div>
+     
+      </div>
+
+
+  </div>
+</div>
+
+</div>
+<div>
+  <p>In economics, a deadweight loss (also known as excess burden or allocative inefficiency) is a loss of economic efficiency that can occur when equilibrium for a good or service is not achieved or is not achievable. The above example represents a shift in supply due to a price ceiling (i.e. a maximum price).</p>
+</div>
+
+
+</body>
+
+</html>
